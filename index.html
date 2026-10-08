@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - E-Waste System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Waste Management Tracking System</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="add-ewaste.html">Add E-Waste</a>
+            <a href="update-status.html">Manage Status</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to the Command Center</h2>
+        <p>Real-time overview of your e-waste collection pipeline.</p>
+
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Collected</h3>
+                <p id="total-ewaste" style="font-size: 2em; font-weight: bold; color: #264653;">0 units</p>
+            </div>
+            <div class="card">
+                <h3>Pending / Transit</h3>
+                <p id="pending-ewaste" style="font-size: 2em; font-weight: bold; color: #e9c46a;">0 units</p>
+            </div>
+            <div class="card">
+                <h3>Successfully Recycled</h3>
+                <p id="recycled-ewaste" style="font-size: 2em; font-weight: bold; color: #2a9d8f;">0 units</p>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 E-Waste Management Project</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

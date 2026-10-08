@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Reports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>E-Waste Management Tracking System</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="add-ewaste.html">Add E-Waste</a>
+            <a href="update-status.html">Manage Status</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>System Analytics & Reports</h2>
+        <div id="reportSummary"></div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 20px;">
+            <div style="width: 350px;">
+                <h3>Type Distribution</h3>
+                <canvas id="typeChart"></canvas>
+            </div>
+            <div style="width: 350px;">
+                <h3>Processing Status</h3>
+                <canvas id="statusChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <footer><p>&copy; 2026 E-Waste Management Project</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
