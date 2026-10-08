@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+header {
+    background: #2a9d8f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.dashboard-cards .card {
+    width: 200px;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background: #e76f51;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #d65a3d;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-Pending { background: #e9c46a; color: #333; }
+.status-Transit { background: #f4a261; }
+.status-Recycled { background: #2a9d8f; }
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    width: auto;
+    padding: 5px 10px;
+}
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+#toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
