@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add E-Waste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Waste Management Tracking System</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="add-ewaste.html">Add E-Waste</a>
+            <a href="update-status.html">Manage Status</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Log New E-Waste Batch</h2>
+        <form id="ewasteForm">
+            <label>Device Type:</label>
+            <select id="type" required>
+                <option value="">Select Category...</option>
+                <option value="Mobile Phone">Mobile Phone</option>
+                <option value="Laptop/PC">Laptop / PC</option>
+                <option value="Battery">Batteries</option>
+                <option value="Large Appliance">Large Appliance</option>
+            </select>
+
+            <label>Quantity (Units/Kg):</label>
+            <input type="number" id="quantity" min="1" placeholder="Enter amount..." required>
+
+            <label>Source Location:</label>
+            <input type="text" id="source" placeholder="e.g., North Hub, City Center" required>
+
+            <label>Collection Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Submit Log</button>
+        </form>
+    </main>
+    
+    <div id="toast">Message here</div>
+
+    <footer><p>&copy; 2026 E-Waste Management Project</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
